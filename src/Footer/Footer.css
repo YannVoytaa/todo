@@ -1,0 +1,10 @@
+.footer{
+  position:absolute;
+  left:0;right:0;bottom:0;
+  text-align: center;
+  background: rgb(41, 105, 105);
+  color: white;
+  font-family: 'Lato', sans-serif;
+  //font-family: 'Roboto Condensed', sans-serif;
+
+}

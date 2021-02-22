@@ -1,0 +1,121 @@
+.item{
+  line-height: 30px;
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+  width:50%;
+  margin: 10px auto;
+  padding:10px;
+  font-family: 'Lato', sans-serif;
+  transition: all 2s;
+  display: grid;
+  grid-template-columns: auto 50px 50px;
+  grid-template-rows: 50px;
+}
+.item > button{
+  margin:5px;
+}
+.item > span{
+  margin:10px;
+}
+@keyframes appear {
+  from {opacity:0;}
+  to {opacity: 1;}
+}
+.item{
+  min-width: 200px;
+  background: linear-gradient(to bottom,rgba(38, 65, 71,0.2),rgba(38, 65, 71,1));
+  color:white;
+  animation-name: appear;
+  animation-duration: 3s;
+  transition: all 2s;
+}
+.delete{
+  //background: rgb(255, 3, 6);
+  background: black;
+  color:white;
+  border:none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.check{
+  background: rgb(123, 255, 71);
+  border:none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+@media screen and (max-width:1000px){
+  .item{
+    width:90%;
+  }
+}
+.crossOut{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.search{
+  width:70%;
+  height:30px;
+  font-family: 'Lato', sans-serif;
+  margin:30px auto;
+}
+.submit{
+  width:20%;
+  margin: 10px auto;
+  border:none;
+  background: rgb(41, 105, 105);
+  color:white;
+  height:34px;
+  cursor: pointer;
+}
+.search_div{
+  margin: 10px auto;
+  width:50%;
+  min-width: 300px;
+}
+.delete:hover{
+  background: rgba(0,0,0,0.5);
+}
+.check:hover{
+  background: rgb(11, 84, 0);
+}
+@keyframes fadeout {
+    from{opacity: 1;}
+    to{opacity:0;display: none}
+}
+.fadeOut{
+  animation:fadeout;
+  animation-duration: 1s;
+}
+.slider{
+  position:fixed;
+  top:0;left:0;
+  background: black;
+  width:100vw;
+  height:100vh;
+}
+.slider-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height:80vh;
+}
+.hide{
+  overflow: hidden;
+}
+.slider > div > div > span{
+  display: inline-block;
+  color:white;
+  font-family: 'Lato', sans-serif;
+  margin:0;
+  font-size: 3rem;
+  transform: translateY(100%);
+}
+.slider-2{
+  position: fixed;
+  top:0;
+  left:0;
+  background: rgb(41, 105, 105);
+  height:100vh;
+  width: 100vw;
+  transform: translateY(100%);
+}

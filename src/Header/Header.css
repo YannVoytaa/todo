@@ -1,0 +1,16 @@
+header{
+  position:fixed;
+  left:0;right:0;top:0;
+  height:20px;
+  background: rgb(41, 105, 105);
+  color: white;
+  font-family: 'Lato', sans-serif;
+  //font-family: 'Roboto Condensed', sans-serif;
+
+}
+.right{
+  float:right;
+}
+span{
+  margin:auto 10px;
+}
